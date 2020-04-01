@@ -1,0 +1,43 @@
+body {
+    font-family: "Roboto";
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    font-size: 14px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navBar > div {
+    padding: 10px;
+}
+
+.mainBody {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;    
+}
+
+.myPicture {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.aboutMe {
+    display:flex;
+    justify-content: center;
+    max-width: 450px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
