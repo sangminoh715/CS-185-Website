@@ -16,8 +16,13 @@ p {
     justify-content: flex-start;
 }
 
-.navBar > div {
-    padding: 10px;
+.navBar > a {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.pageTitle {
+    margin-top: 50px;
 }
 
 .mainBody {
