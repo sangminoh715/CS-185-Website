@@ -48,6 +48,10 @@ p {
     flex-direction: column;
 }
 
+.gameContent {
+    margin-bottom: 30px;
+}
+
 .quote {
     display: flex;
     justify-content: center;
@@ -68,4 +72,17 @@ p {
 
 .quote > div > .character {
     text-align: right;
+}
+
+.screenshots {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.screenshots > .screenshot {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    margin: 10px;
 }
