@@ -1,0 +1,25 @@
+body {
+    font-family: "Roboto";
+}
+
+h1 {
+    text-align: center;
+}
+
+.navBar {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navBar > a {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.pageTitle {
+    margin-top: 50px;
+}
+
+.mainBody {
+    
+}
