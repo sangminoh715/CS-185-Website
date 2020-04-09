@@ -22,7 +22,8 @@ p {
 }
 
 .pageTitle {
-    margin-top: 50px;
+    margin-top: 75px;
+    margin-bottom: 25px;
 }
 
 .mainBody {
@@ -40,7 +41,7 @@ p {
 }
 
 .aboutMe {
-    display:flex;
+    display: flex;
     justify-content: center;
     max-width: 450px;
     margin-top: auto;
