@@ -6,6 +6,15 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+    font-style: italic;
+}
+
+p {
+    font-size: 14px;
+}
+
 .navBar {
     display: flex;
     justify-content: flex-start;
@@ -17,9 +26,46 @@ h1 {
 }
 
 .pageTitle {
-    margin-top: 50px;
+    margin-top: 75px;
+    margin-bottom: 45px;
+}
+
+.pageDescription {
+    display: flex;
+    justify-content: center;
+}
+
+.pageDescription > div {
+    width: 450px;
+}
+
+.pageDescription > div > p {
+    text-align: center;
 }
 
 .mainBody {
-    
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+}
+
+.quote > div {
+    width: 500px;
+}
+
+.quote > div > p {
+    font-style: italic;
+    color: #545454;
+}
+
+.quote > div > .text {
+    text-align: justify;
+}
+
+.quote > div > .character {
+    text-align: right;
 }
