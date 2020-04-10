@@ -6,6 +6,10 @@ h1 {
     text-align: center;
 }
 
+p {
+    font-size: 14px;
+}
+
 .navBar {
     display: flex;
     justify-content: flex-start;
@@ -18,6 +22,20 @@ h1 {
 
 .pageTitle {
     margin-top: 75px;
+    margin-bottom: 45px;
+}
+
+.pageDescription {
+    display: flex;
+    justify-content: center;
+}
+
+.pageDescription > div {
+    width: 450px;
+}
+
+.pageDescription > div > p {
+    text-align: center;
 }
 
 .mainBody {
