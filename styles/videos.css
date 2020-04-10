@@ -39,5 +39,18 @@ p {
 }
 
 .mainBody {
-    
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 25px 15px;
+    justify-content: center;
+}
+
+.mainBody > .video {
+    place-self: center;
+    margin: 10px;
+}
+
+.mainBody > .info {
+    align-self: center;
 }
