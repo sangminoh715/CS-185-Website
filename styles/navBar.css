@@ -1,0 +1,9 @@
+.navBar {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navBar > a {
+    margin-left: 2px;
+    margin-right: 2px;
+}

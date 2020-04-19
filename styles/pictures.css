@@ -15,21 +15,6 @@ p {
     font-size: 14px;
 }
 
-.navBar {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.navBar > a {
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
-.navBar > .current {
-    background-color: #23272b;
-    border: 1px solid black;
-}
-
 .pageTitle {
     margin-top: 75px;
     margin-bottom: 45px;

@@ -19,21 +19,6 @@ p {
     font-size: 1rem;
 }
 
-.navBar {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.navBar > a {
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
-.navBar > .current {
-    background-color: #23272b;
-    border: 1px solid black;
-}
-
 .pageTitle {
     margin-top: calc(40px + 2vh);
     margin-bottom: 4vh;
@@ -67,8 +52,6 @@ p {
     .project {
         flex-direction: column-reverse;
     }
-    
-    
 }
 
 @media only screen and (min-width: 480px) {
