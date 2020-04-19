@@ -35,12 +35,12 @@ p {
 }
 
 .pageTitle {
-    margin-top: calc(40px + 2vh);
-    margin-bottom: 4vh;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .pageDescription {
-    max-width: 450px;
+    max-width: 400px;
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
@@ -90,4 +90,8 @@ p {
     max-width: 600px;
     height: auto;
     padding: 10px;
+}
+
+.last {
+    margin-bottom: 10px;
 }

@@ -21,8 +21,8 @@ p {
 }
 
 .pageTitle {
-    margin-top: calc(40px + 2vh);
-    margin-bottom: 2vh;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .mainBody {
