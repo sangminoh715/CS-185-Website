@@ -1,0 +1,51 @@
+body {
+    position: relative;
+}
+
+@media only screen and (max-width: 220px) {
+    h1 {
+        text-align: center;
+        font-size: 2rem !important;
+    }
+    
+    h2 {
+        font-size: 1.5rem !important;
+    }
+}
+@media only screen and (min-width: 220px) {
+    h1 {
+        text-align: center;
+        font-size: 2.5rem !important;
+    }
+    
+    h2 {
+        font-size: 2rem !important;
+    }
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.pageTitle {
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.pageDescription {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pageDescription > div > p {
+    text-align: center;
+}

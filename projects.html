@@ -3,25 +3,33 @@
 
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="pageID" content="1"> <!-- Tab ID -->
+        
         <title>
             Sang Min Oh - Projects
         </title>
-        <link rel="stylesheet" type="text/css" href="styles/projects.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"> <!-- Roboto Font -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- CSS Bootstrap -->
+        
         <link rel="shortcut icon" type="image/x-icon" href="images/icon.png">
+        
+        <link rel="stylesheet" type="text/css" href="styles/projects.css">
+        
+        <link rel="stylesheet" type="text/css" href="styles/common.css">
+        <link rel="stylesheet" type="text/css" href="styles/contentViewer.css">
+        <link rel="stylesheet" type="text/css" href="styles/navBar.css">
+        <link rel="stylesheet" type="text/css" href="styles/toTopButton.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!-- Bootstrap (for font only) -->
+        
+        <script type="text/javascript" src="scripts/tabHighlight.js"></script>
+        <script type="text/javascript" src="scripts/toTopButton.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <!-- jQuery -->
     </head>
     
     <body>
-        <!-- Bootstrap Navigation Bar -->
-        <nav class="navbar fixed-top navbar-dark bg-dark">
-            <div class="navBar">
-                <a href="index.html" class="btn btn-dark btn-sm" role="button">Home</a>
-                <a href="projects.html" class="btn btn-dark btn-sm" role="button">Projects</a>
-                <a href="pictures.html" class="btn btn-dark btn-sm" role="button">Pictures</a>
-                <a href="videos.html" class="btn btn-dark btn-sm" role="button">Videos</a>
-            </div>
-        </nav>
+        <div class="navBarPlaceholder"></div>
+        <script type="text/javascript">
+            $(".navBarPlaceholder").load("navBar.html");
+        </script>
 
         <div class="pageTitle">
             <h1>
@@ -37,31 +45,40 @@
         </div>
         
         <div class="projectContainer">
-            <div class="pictureProject1">
-                <a href="https://sites.google.com/view/eternalflight">
-                    <img src="images/eternal_flight_logo.png" alt="Eternal Flight Logo" width="198px">
-                </a>
+            <div class="project">
+                <div class="projectLink">
+                    <a href="https://sites.google.com/view/eternalflight">
+                        <img class="logo" src="images/eternal_flight_logo.png" alt="Eternal Flight Logo" width="198px">
+                    </a>
+                </div>
+                <div class="description">
+                    <p>
+                        <b>Eternal Flight</b>
+                        <br>
+                        In-Flight Drone Battery Switching
+                    </p>
+                </div>
             </div>
-            <div class="description textProject1">
-                <p>
-                    <b>Eternal Flight</b>
-                    <br>
-                    In-Flight Drone Battery Switching
-                </p>
-            </div>
-            <div class="pictureProject2">
-                <a href="https://sites.google.com/view/automatic-calorie-tracker">
-                    <img src="images/act_logo.png" alt="Automatic Calorie Tracker Logo" width="200px">
-                </a>
-            </div>
-            <div class="description textProject2">
-                <p>
-                    <b>Automatic Calorie Tracker</b>
-                    <br>
-                    Nutrition Facts Scanner for Easy Calorie Tracking
-                </p>
+            
+            <div class="project">
+                <div class="projectLink">
+                    <a href="https://sites.google.com/view/automatic-calorie-tracker">
+                        <img class="logo" src="images/act_logo.png" alt="Automatic Calorie Tracker Logo">
+                    </a>
+                </div>
+                <div class="description">
+                    <p>
+                        <b>Automatic Calorie Tracker</b>
+                        <br>
+                        Nutrition Facts Scanner for Easy Calorie Tracking
+                    </p>
+                </div>
             </div>
         </div>
+        
+        <script type="text/javascript">
+            scrollListener();
+        </script>
     </body>
 
 </html>

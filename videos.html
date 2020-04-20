@@ -3,25 +3,33 @@
 
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="pageID" content="3"> <!-- Tab ID -->
+        
         <title>
             Sang Min Oh - Videos
         </title>
-        <link rel="stylesheet" type="text/css" href="styles/videos.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"> <!-- Roboto Font -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- CSS Bootstrap -->
+        
         <link rel="shortcut icon" type="image/x-icon" href="images/icon.png">
+        
+        <link rel="stylesheet" type="text/css" href="styles/videos.css">
+        
+        <link rel="stylesheet" type="text/css" href="styles/common.css">
+        <link rel="stylesheet" type="text/css" href="styles/contentViewer.css">
+        <link rel="stylesheet" type="text/css" href="styles/navBar.css">
+        <link rel="stylesheet" type="text/css" href="styles/toTopButton.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!-- Bootstrap (for font only) -->
+        
+        <script type="text/javascript" src="scripts/tabHighlight.js"></script>
+        <script type="text/javascript" src="scripts/toTopButton.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <!-- jQuery -->
     </head>
     
     <body>
-        <!-- Bootstrap Navigation Bar -->
-        <nav class="navbar fixed-top navbar-dark bg-dark">
-            <div class="navBar">
-                <a href="index.html" class="btn btn-dark btn-sm" role="button">Home</a>
-                <a href="projects.html" class="btn btn-dark btn-sm" role="button">Projects</a>
-                <a href="pictures.html" class="btn btn-dark btn-sm" role="button">Pictures</a>
-                <a href="videos.html" class="btn btn-dark btn-sm" role="button">Videos</a>
-            </div>
-        </nav>
+        <div class="navBarPlaceholder"></div>
+        <script type="text/javascript">
+            $(".navBarPlaceholder").load("navBar.html");
+        </script>
 
         <div class="pageTitle">
             <h1>
@@ -37,31 +45,43 @@
         </div>
         
         <div class="mainBody">
-            <div class="video video1">
-                <iframe width="500" height="325" src="https://www.youtube.com/embed/Pi8xsZXibIc" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video">
+                <div class="videoContainer">
+                    <iframe class="videoLink" src="https://www.youtube.com/embed/Pi8xsZXibIc" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="info videoInfo1">
+                    <p>
+                        <i>My Dearest</i> arranged by <b>Animenz Piano Sheets</b>
+                    </p>
+                </div>
             </div>
-            <div class="info videoInfo1">
-                <p>
-                    <i>My Dearest</i> arranged by <b>Animenz Piano Sheets</b>
-                </p>
+            
+            <div class="video">
+                <div class="videoContainer">
+                    <iframe class="videoLink" src="https://www.youtube.com/embed/a8QNP4UYE-k" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="info videoInfo2">
+                    <p>
+                        <i>Phantasmal Woods</i> arranged by <b>Poma</b>
+                    </p>
+                </div>
             </div>
-            <div class="video video2">
-                <iframe width="500" height="325" src="https://www.youtube.com/embed/a8QNP4UYE-k" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="info videoInfo2">
-                <p>
-                    <i>Phantasmal Woods</i> arranged by <b>Poma</b>
-                </p>
-            </div>
-            <div class="video video3">
-                <iframe width="500" height="325" src="https://www.youtube.com/embed/SG8s6_vRYew" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="info videoInfo3">
-                <p>
-                    <i>Hopes & Dreams / His Theme</i> arranged by <b>Zeyun Music</b>
-                </p>
+            
+            <div class="video last">
+                <div class="videoContainer">
+                    <iframe class="videoLink" src="https://www.youtube.com/embed/SG8s6_vRYew" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="info videoInfo3">
+                    <p>
+                        <i>Hopes & Dreams / His Theme</i> arranged by <b>Zeyun Music</b>
+                    </p>
+                </div>
             </div>
         </div>
+        
+        <script type="text/javascript">
+            scrollListener();
+        </script>
     </body>
 
 </html>
