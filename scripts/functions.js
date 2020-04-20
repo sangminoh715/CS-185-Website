@@ -19,3 +19,27 @@ function highlightCurrentTab() {
     targetButton.style.backgroundColor = "#23272b";
     targetButton.style.border = "1px solid black";
 }
+
+function displayImage(imageSrcPath) {
+    document.body.classList.add("fixedView");
+    
+    const image = document.createElement("img");
+    image.setAttribute("class", "largeContentImage");
+    image.setAttribute("src", imageSrcPath);
+    
+    const viewer = document.createElement("div");
+    viewer.setAttribute("id", "viewer");
+    viewer.setAttribute("onclick", "removeViewerAndContent()");
+    viewer.appendChild(image);
+    
+    document.body.appendChild(viewer);
+}
+
+function removeViewerAndContent() {
+    const viewer = document.getElementById("viewer");
+    if(viewer != null) {
+        viewer.remove();
+    }
+    
+    document.body.classList.remove("fixedView");
+}
