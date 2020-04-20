@@ -1,5 +1,4 @@
 body {
-    font-family: "Roboto";
     position: relative;
 }
 
@@ -37,7 +36,7 @@ p {
 
 .pageTitle {
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .pageDescription {
